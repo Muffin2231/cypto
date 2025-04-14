@@ -1,50 +1,794 @@
 [
   {
-    "chapter": "第1章：加密货币基础",
+    "chapter": "第1章：对称密码算法",
     "difficulty": "容易",
     "type": "multiple_choice",
-    "text": "比特币的创始人是谁？",
-    "options": ["中本聪", "维塔利克·布特林", "埃隆·马斯克", "比尔·盖茨"],
-    "correct_answer": "中本聪"
+    "text": "AES算法中OFB模式的全称是什么？",
+    "options": ["Output Feedback Mode", "Output Function Block", "Online Feedback Mode", "Output File Block"],
+    "correct_answer": "Output Feedback Mode"
   },
   {
-    "chapter": "第1章：加密货币基础",
-    "difficulty": "中等",
-    "type": "multiple_choice",
-    "text": "以下哪个是区块链的主要特点？",
-    "options": ["中心化", "去中心化", "单一控制", "封闭系统"],
-    "correct_answer": "去中心化"
-  },
-  {
-    "chapter": "第1章：加密货币基础",
-    "difficulty": "困难",
-    "type": "true_false",
-    "text": "比特币的总量是无限的吗？",
-    "options": ["True", "False"],
-    "correct_answer": "False"
-  },
-  {
-    "chapter": "第2章：区块链技术",
+    "chapter": "第1章：对称密码算法",
     "difficulty": "容易",
     "type": "multiple_choice",
-    "text": "区块链主要用来记录什么？",
-    "options": ["天气数据", "交易记录", "社交媒体帖子", "视频文件"],
-    "correct_answer": "交易记录"
+    "text": "AES-128的密钥长度是多少字节？",
+    "options": ["16", "24", "32", "8"],
+    "correct_answer": "16"
   },
   {
-    "chapter": "第2章：区块链技术",
-    "difficulty": "中等",
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
     "type": "true_false",
-    "text": "以太坊支持智能合约吗？",
+    "text": "在AES的OFB模式中，加密和解密都使用相同的密钥流生成过程。",
     "options": ["True", "False"],
     "correct_answer": "True"
   },
   {
-    "chapter": "第2章：区块链技术",
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Java中使用AES/OFB/PKCS5Padding时需要哪个加密库？",
+    "options": ["Bouncy Castle", "OpenSSL", "Java默认库", "PyCryptodome"],
+    "correct_answer": "Bouncy Castle"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "如果AES解密时错误地使用ENCRYPT_MODE会怎样？",
+    "options": ["解密失败", "得到正确明文但末尾有乱码", "程序崩溃", "没有任何影响"],
+    "correct_answer": "得到正确明文但末尾有乱码"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "OFB模式可以将分组密码转换为流密码。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
     "difficulty": "困难",
     "type": "multiple_choice",
-    "text": "以下哪个共识机制消耗能量最多？",
-    "options": ["权益证明", "工作量证明", "委托证明", "随机证明"],
-    "correct_answer": "工作量证明"
+    "text": "ChaCha20算法需要多少个字节的nonce？",
+    "options": ["12", "16", "8", "32"],
+    "correct_answer": "12"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在文件加密工具中，IV值通常存储在哪里？",
+    "options": ["密文文件开头", "单独的文件中", "内存中", "不需要存储"],
+    "correct_answer": "密文文件开头"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "PBKDF2WithHmacSHA256可以用于从口令派生密钥。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "PKCS5Padding填充方案主要用于什么？",
+    "options": ["使数据长度符合分组要求", "加密密钥", "生成IV", "计算哈希值"],
+    "correct_answer": "使数据长度符合分组要求"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "在Java中，哪个类用于指定AES算法的IV参数？",
+    "options": ["IvParameterSpec", "SecretKeySpec", "Cipher", "KeyGenerator"],
+    "correct_answer": "IvParameterSpec"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "AES是一种对称加密算法。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Java中，哪个方法用于初始化Cipher对象？",
+    "options": ["init()", "start()", "execute()", "begin()"],
+    "correct_answer": "init()"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "OFB模式中，如果IV全为0，会有什么安全隐患？",
+    "options": ["密钥流可预测", "加密速度变慢", "无法解密", "没有影响"],
+    "correct_answer": "密钥流可预测"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "ChaCha20算法比AES更适合在移动设备上使用。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在文件加密工具中，元数据不包括以下哪项？",
+    "options": ["文件大小", "密钥长度", "IV值", "文件扩展名"],
+    "correct_answer": "文件大小"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "使用CipherInputStream的主要目的是什么？",
+    "options": ["边读取边解密", "提高加密速度", "生成密钥", "计算哈希值"],
+    "correct_answer": "边读取边解密"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "在OFB模式中，加密和解密可以使用相同的函数实现。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "Java中用于加密操作的类是？",
+    "options": ["Cipher", "Encryptor", "Crypto", "Secret"],
+    "correct_answer": "Cipher"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "AES算法支持的密钥长度不包括以下哪种？",
+    "options": ["128位", "192位", "256位", "512位"],
+    "correct_answer": "512位"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "PKCS5Padding和PKCS7Padding是完全相同的填充方案。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Java中，哪个方法用于执行实际的加密/解密操作？",
+    "options": ["doFinal()", "execute()", "perform()", "process()"],
+    "correct_answer": "doFinal()"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "以下哪种模式不需要填充？",
+    "options": ["ECB", "CBC", "OFB", "所有都需要填充"],
+    "correct_answer": "OFB"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "AES算法的S盒提供了非线性变换。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在PBKDF2密钥派生中，增加迭代次数的主要目的是什么？",
+    "options": ["提高安全性", "加快派生速度", "减少内存使用", "兼容更多算法"],
+    "correct_answer": "提高安全性"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "ChaCha20算法中，计数器的作用是什么？",
+    "options": ["防止密钥流重复", "增加加密强度", "生成IV", "计算哈希值"],
+    "correct_answer": "防止密钥流重复"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "在AES的OFB模式中，加密前的错误不会影响解密后的对应部分。",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "以下哪个不是对称加密算法？",
+    "options": ["AES", "ChaCha20", "RSA", "DES"],
+    "correct_answer": "RSA"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "Java中用于封装密钥的类是？",
+    "options": ["SecretKeySpec", "KeyWrapper", "CipherKey", "EncryptedKey"],
+    "correct_answer": "SecretKeySpec"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "AES算法是基于Rijndael算法设计的。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在OFB模式中，加密过程实际上是怎样的操作？",
+    "options": ["明文与密钥流异或", "分组加密", "哈希计算", "置换操作"],
+    "correct_answer": "明文与密钥流异或"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "Java中用于生成随机密钥的类是？",
+    "options": ["KeyGenerator", "RandomKey", "KeyFactory", "SecretCreator"],
+    "correct_answer": "KeyGenerator"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "ChaCha20算法比AES更适合在资源受限的设备上使用。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在文件加密工具中，为什么要存储文件扩展名？",
+    "options": ["解密后恢复原文件名", "加密时需要", "计算哈希值需要", "没有实际用途"],
+    "correct_answer": "解密后恢复原文件名"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "以下哪种操作模式可以实现并行加密？",
+    "options": ["ECB", "CBC", "OFB", "CFB"],
+    "correct_answer": "ECB"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "在Java中，Cipher.getInstance()方法是工厂方法。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "AES算法中，一个分组的大小是多少位？",
+    "options": ["128", "256", "64", "512"],
+    "correct_answer": "128"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "Java中用于表示初始化向量的类是？",
+    "options": ["IvParameterSpec", "InitialVector", "IVSpec", "VectorParam"],
+    "correct_answer": "IvParameterSpec"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "OFB模式不需要填充。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Java中，哪个异常表示不支持的填充方案？",
+    "options": ["NoSuchPaddingException", "InvalidPaddingException", "NoSuchAlgorithmException", "BadPaddingException"],
+    "correct_answer": "NoSuchPaddingException"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "以下哪种模式最不适合加密大文件？",
+    "options": ["ECB", "CBC", "OFB", "CTR"],
+    "correct_answer": "ECB"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "ChaCha20算法是由Daniel J. Bernstein设计的。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在PBKDF2密钥派生中，盐值(salt)的主要作用是？",
+    "options": ["防止彩虹表攻击", "加快派生速度", "减少内存使用", "增加密钥长度"],
+    "correct_answer": "防止彩虹表攻击"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "Java中用于读取二进制数据的类是？",
+    "options": ["DataInputStream", "FileReader", "BufferedReader", "TextReader"],
+    "correct_answer": "DataInputStream"
+  },
+  {
+    "chapter": "第1章：对称密码算法",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "在AES的OFB模式中，可以预先生成密钥流。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "以下哪个不是哈希函数的特性？",
+    "options": ["可逆性", "抗碰撞性", "单向性", "确定性"],
+    "correct_answer": "可逆性"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "MD5算法输出的哈希值长度是多少位？",
+    "options": ["128", "160", "256", "512"],
+    "correct_answer": "128"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "SHA-3算法是基于Keccak算法设计的。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Java中，计算哈希值的核心类是？",
+    "options": ["MessageDigest", "HashCalculator", "Digest", "HashFunction"],
+    "correct_answer": "MessageDigest"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "SM3算法是哪个国家制定的哈希标准？",
+    "options": ["中国", "美国", "俄罗斯", "欧盟"],
+    "correct_answer": "中国"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "SHA-1算法目前仍然被认为是安全的。",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "Keccak算法中的ι操作属于哪一步骤？",
+    "options": ["轮函数", "填充", "初始化", "输出转换"],
+    "correct_answer": "轮函数"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在Java中使用SM3算法需要哪个加密库？",
+    "options": ["Bouncy Castle", "OpenSSL", "Java默认库", "PyCryptodome"],
+    "correct_answer": "Bouncy Castle"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "SHA-3-512和Keccak-512是完全相同的算法。",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "SHA-256算法输出的哈希值长度是多少位？",
+    "options": ["256", "128", "512", "160"],
+    "correct_answer": "256"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "以下哪个算法不属于SHA-2家族？",
+    "options": ["SHA-224", "SHA-256", "SHA-384", "SHA-3-256"],
+    "correct_answer": "SHA-3-256"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "哈希函数可以将任意长度的输入转换为固定长度的输出。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Java中，如何注册Bouncy Castle提供者？",
+    "options": ["Security.addProvider()", "Provider.register()", "Crypto.addProvider()", "Digest.registerProvider()"],
+    "correct_answer": "Security.addProvider()"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "Keccak算法使用的海绵结构不包括哪个阶段？",
+    "options": ["吸收", "挤压", "混淆", "填充"],
+    "correct_answer": "混淆"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "SHA-3算法与SHA-2算法使用相同的设计结构。",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在Keccak算法中，轮函数包含多少轮操作？",
+    "options": ["24", "12", "5", "16"],
+    "correct_answer": "24"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "以下哪种不是哈希函数的常见应用？",
+    "options": ["数据加密", "数据完整性验证", "密码存储", "数字签名"],
+    "correct_answer": "数据加密"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "MD5算法目前已被证明存在严重的安全漏洞。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "SHA-1算法输出的哈希值长度是多少位？",
+    "options": ["160", "128", "256", "512"],
+    "correct_answer": "160"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "在Java中，哪个方法用于更新哈希计算的数据？",
+    "options": ["update()", "append()", "add()", "put()"],
+    "correct_answer": "update()"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "相同的输入使用相同的哈希算法总会产生相同的输出。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "以下哪个是中国的哈希算法标准？",
+    "options": ["SM3", "SM4", "SM2", "SM9"],
+    "correct_answer": "SM3"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Java中，哪个方法用于获取最终的哈希值？",
+    "options": ["digest()", "finalize()", "getHash()", "result()"],
+    "correct_answer": "digest()"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "彩虹表攻击是针对哈希函数的一种攻击方式。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "Keccak算法中，状态矩阵的大小是多少位？",
+    "options": ["1600", "512", "1024", "2048"],
+    "correct_answer": "1600"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "以下哪种技术可以用来防御彩虹表攻击？",
+    "options": ["加盐", "增加哈希轮数", "使用更长的哈希值", "组合多个哈希函数"],
+    "correct_answer": "加盐"
+  },
+  {
+    "chapter": "第2章：HASH算法",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "SHA-3算法采用了Merkle-Damgård结构。",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "keytool命令中，哪个选项用于生成密钥对？",
+    "options": ["-genkeypair", "-makekey", "-createkey", "-newkey"],
+    "correct_answer": "-genkeypair"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "PKCS12格式的密钥库文件扩展名通常是？",
+    "options": [".p12", ".key", ".cer", ".jks"],
+    "correct_answer": ".p12"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "密钥库可以同时存储公钥和私钥。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Java中，表示密钥库的类是？",
+    "options": ["KeyStore", "KeyDatabase", "KeyContainer", "KeyRepository"],
+    "correct_answer": "KeyStore"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "以下哪种椭圆曲线在密钥管理中较为安全？",
+    "options": ["secp521r1", "secp128r1", "secp192r1", "secp256r1"],
+    "correct_answer": "secp521r1"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "自签名证书是由证书所有者自己签名的证书。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在Java中，哪个异常表示密钥库密码错误？",
+    "options": ["UnrecoverableKeyException", "InvalidPasswordException", "KeyStoreException", "NoSuchAlgorithmException"],
+    "correct_answer": "UnrecoverableKeyException"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "keytool命令中，哪个选项用于导出证书？",
+    "options": ["-exportcert", "-outcert", "-savecert", "-extractcert"],
+    "correct_answer": "-exportcert"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "PKCS12格式的密钥库可以包含证书链。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "在keytool命令中，哪个选项用于指定别名？",
+    "options": ["-alias", "-name", "-id", "-keyname"],
+    "correct_answer": "-alias"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "PEM格式的证书通常以什么开头？",
+    "options": ["-----BEGIN CERTIFICATE-----", "-----START CERT-----", "-----CERTIFICATE-----", "-----BEGIN-----"],
+    "correct_answer": "-----BEGIN CERTIFICATE-----"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "私钥可以公开分发。",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Java中，哪个类用于表示椭圆曲线私钥？",
+    "options": ["ECPrivateKey", "EllipticPrivateKey", "CurvePrivateKey", "ECSecretKey"],
+    "correct_answer": "ECPrivateKey"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "keytool命令中，哪个选项用于查看密钥库内容？",
+    "options": ["-list", "-show", "-view", "-display"],
+    "correct_answer": "-list"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "Java默认的密钥库类型是JKS。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在Java中，哪个类用于保护密钥库条目？",
+    "options": ["PasswordProtection", "KeyProtector", "EntryGuard", "KeyShield"],
+    "correct_answer": "PasswordProtection"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "以下哪种不是常见的密钥库类型？",
+    "options": ["PKCS7", "PKCS12", "JKS", "JCEKS"],
+    "correct_answer": "PKCS7"
+  },
+  {
+    "chapter": "第3章：密钥管理",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "PKCS12格式的密钥库比JKS格式更安全。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第4章：JAVA密码学开发环境",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "在Eclipse中，哪个视图用于查看类的大纲？",
+    "options": ["Outline", "Package Explorer", "Problems", "Console"],
+    "correct_answer": "Outline"
+  },
+  {
+    "chapter": "第4章：JAVA密码学开发环境",
+    "difficulty": "容易",
+    "type": "multiple_choice",
+    "text": "Bouncy Castle提供者的JAR文件通常放在项目的哪个目录？",
+    "options": ["lib", "src", "bin", "doc"],
+    "correct_answer": "lib"
+  },
+  {
+    "chapter": "第4章：JAVA密码学开发环境",
+    "difficulty": "容易",
+    "type": "true_false",
+    "text": "Bouncy Castle是一个开源的密码学库。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
+  },
+  {
+    "chapter": "第4章：JAVA密码学开发环境",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "在Eclipse中，如何添加外部JAR文件到构建路径？",
+    "options": ["Build Path -> Configure Build Path -> Add JARs", "Project -> Add Library", "File -> Import", "Run -> Add External JARs"],
+    "correct_answer": "Build Path -> Configure Build Path -> Add JARs"
+  },
+  {
+    "chapter": "第4章：JAVA密码学开发环境",
+    "difficulty": "中等",
+    "type": "multiple_choice",
+    "text": "WindowBuilder主要用于什么？",
+    "options": ["图形界面设计", "代码调试", "性能分析", "单元测试"],
+    "correct_answer": "图形界面设计"
+  },
+  {
+    "chapter": "第4章：JAVA密码学开发环境",
+    "difficulty": "中等",
+    "type": "true_false",
+    "text": "Java默认支持SM3算法。",
+    "options": ["True", "False"],
+    "correct_answer": "False"
+  },
+  {
+    "chapter": "第4章：JAVA密码学开发环境",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "在Eclipse中，哪个异常表示类路径配置错误？",
+    "options": ["ClassNotFoundException", "NullPointerException", "ArrayIndexOutOfBoundsException", "IllegalArgumentException"],
+    "correct_answer": "ClassNotFoundException"
+  },
+  {
+    "chapter": "第4章：JAVA密码学开发环境",
+    "difficulty": "困难",
+    "type": "multiple_choice",
+    "text": "如何验证Bouncy Castle提供者是否成功安装？",
+    "options": ["Security.getProviders()", "Provider.list()", "Cipher.getProviders()", "KeyStore.getProviders()"],
+    "correct_answer": "Security.getProviders()"
+  },
+  {
+    "chapter": "第4章：JAVA密码学开发环境",
+    "difficulty": "困难",
+    "type": "true_false",
+    "text": "WindowBuilder可以可视化设计Swing界面。",
+    "options": ["True", "False"],
+    "correct_answer": "True"
   }
 ]
