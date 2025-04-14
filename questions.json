@@ -1,44 +1,50 @@
 [
   {
-    "chapter": "第1章",
+    "chapter": "第1章：加密货币基础",
     "difficulty": "容易",
-    "text": "1+1 等于多少？",
-    "options": ["1", "2", "3", "4"],
-    "correct_answer": "2"
+    "type": "multiple_choice",
+    "text": "比特币的创始人是谁？",
+    "options": ["中本聪", "维塔利克·布特林", "埃隆·马斯克", "比尔·盖茨"],
+    "correct_answer": "中本聪"
   },
   {
-    "chapter": "第1章",
+    "chapter": "第1章：加密货币基础",
     "difficulty": "中等",
-    "text": "2 的平方是多少？",
-    "options": ["2", "4", "6", "8"],
-    "correct_answer": "4"
+    "type": "multiple_choice",
+    "text": "以下哪个是区块链的主要特点？",
+    "options": ["中心化", "去中心化", "单一控制", "封闭系统"],
+    "correct_answer": "去中心化"
   },
   {
-    "chapter": "第1章",
+    "chapter": "第1章：加密货币基础",
     "difficulty": "困难",
-    "text": "以下哪个是质数？",
-    "options": ["4", "6", "7", "9"],
-    "correct_answer": "7"
+    "type": "true_false",
+    "text": "比特币的总量是无限的吗？",
+    "options": ["True", "False"],
+    "correct_answer": "False"
   },
   {
-    "chapter": "第2章",
+    "chapter": "第2章：区块链技术",
     "difficulty": "容易",
-    "text": "中国的首都是哪里？",
-    "options": ["上海", "北京", "广州", "深圳"],
-    "correct_answer": "北京"
+    "type": "multiple_choice",
+    "text": "区块链主要用来记录什么？",
+    "options": ["天气数据", "交易记录", "社交媒体帖子", "视频文件"],
+    "correct_answer": "交易记录"
   },
   {
-    "chapter": "第2章",
+    "chapter": "第2章：区块链技术",
     "difficulty": "中等",
-    "text": "长江是中国的第几长河？",
-    "options": ["第一", "第二", "第三", "第四"],
-    "correct_answer": "第一"
+    "type": "true_false",
+    "text": "以太坊支持智能合约吗？",
+    "options": ["True", "False"],
+    "correct_answer": "True"
   },
   {
-    "chapter": "第2章",
+    "chapter": "第2章：区块链技术",
     "difficulty": "困难",
-    "text": "以下哪个城市不属于直辖市？",
-    "options": ["北京", "上海", "广州", "重庆"],
-    "correct_answer": "广州"
+    "type": "multiple_choice",
+    "text": "以下哪个共识机制消耗能量最多？",
+    "options": ["权益证明", "工作量证明", "委托证明", "随机证明"],
+    "correct_answer": "工作量证明"
   }
 ]
